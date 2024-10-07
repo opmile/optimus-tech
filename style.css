@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-de-fundo: #FFFFFF;
+    --titulos-principais: #101828;
+    --cor-textos: #667085;
+    --cor-de-destaque: #8E2424;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--cor-textos);
+    background-color: var(--cor-de-fundo);
+}
+
+/* Header CSS */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 112px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-textos);
+}
+
+.header-container {
+    display: flex;
+    gap: 119px;
+    align-items: center;
+}
+
+.header__nav-main-lista {
+    display: flex;
+    gap: 32px;
+}
+
+.header__nav-cadastro {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 18px;
+}
+
+.sign-up {
+    background-color: var(--cor-de-destaque);
+    color: var(--cor-de-fundo);
+    border-radius: 9px;
+    padding: 13px;
+}
+
+/* Main CSS */
+main {
+    margin: 18px 112px;
+}
+
+/* Main - 1: Apresentação */
+.main-apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    margin: 0 130px;
+}
+
+.main-apresentacao .sobre {
+    margin-top: 96px;
+    color: var(--cor-de-destaque);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.main-apresentacao .titulo {
+    font-size: 48px;
+    color: var(--titulos-principais);
+}
+
+.main-apresentacao .texto {
+    margin-bottom: 96px;
+    font-size: 20px;
+}
+
+/* Main - 2: Resultados Estatísticos */
+
+.main-resultados {
+    display: flex;
+    gap: 32px;
+    margin: 0 112px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado .numero {
+    font-size: 60px;
+    color: var(--cor-de-destaque);
+}
+
+.resultado .descrição {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: var(--titulos-principais);
+    font-weight: 500;
+}
+
+.resultado .texto {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.main-talentos-apresentação {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.main-talentos-apresentação .vagas {
+    margin-top: 96px;
+    font-size: 14px;
+    color: var(--cor-de-destaque);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.main-talentos-apresentação .titulo {
+    color: var(--titulos-principais);
+    font-size: 36px;
+}
+
+.main-talentos-apresentação .texto {
+    font-size: 20px;
+}
+
+.main-talentos-apresentação .imagem {
+    max-width: 85%;
+    height: auto;
+    margin: 64px 112px;
+    border-radius: 2rem;
+}
+
+.main-vagas {
+    display: flex;
+    flex-direction: column;
+    margin: 0 250px;
+}
+
+.main-vagas-carreira {
+    margin-top: 64px;
+}
+
+h3 {
+    color: var(--titulos-principais);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h4 {
+    color: var(--titulos-principais);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-vagas-oferta {
+    padding: 24px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    margin: 1rem;
+}
+
+.main-vagas-info {
+    display: flex;
+    gap: 2rem;
+    padding-top: 24px;
+}
+
+.main-depoimentos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 64px;
+    margin: 96px 112px;
+    background-color: rgba(195, 25, 25, 0.03);
+    text-align: center;
+}
+
+.main-depoimentos-titulo {
+    color: var(--cor-de-destaque);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-depoimentos-slogan {
+    color: var(--titulos-principais);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.perfil-nome {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: var(--titulos-principais);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.footer-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-titulo {
+    margin-top: 96px;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--titulos-principais);
+}
+
+.footer-paragrafo {
+    font-size: 18px;
+}
+
+.footer-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input {
+    height: 40px;
+    width: 360px;
+    padding: 0 30px;
+    border-radius: 8px;
+    border: var(--cor-textos);
+}
+
+.footer-cadastro-botão {
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-de-destaque);
+    border-radius: 8px;
+    padding: 12px 20px;
+    border: none;
+    font-weight: 500;
+}
+
+.footer-direitos {
+    margin-bottom: 96px;
+}
