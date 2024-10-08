@@ -60,12 +60,10 @@ a {
     padding: 13px;
 }
 
-/* Main CSS */
 main {
     margin: 18px 112px;
 }
 
-/* Main - 1: Apresentação */
 .main-apresentacao {
     display: flex;
     flex-direction: column;
@@ -91,8 +89,6 @@ main {
     margin-bottom: 96px;
     font-size: 20px;
 }
-
-/* Main - 2: Resultados Estatísticos */
 
 .main-resultados {
     display: flex;
@@ -257,11 +253,12 @@ footer {
 }
 
 input {
-    height: 40px;
-    width: 360px;
-    padding: 0 30px;
+    height: 50%;
+    width: 20rem;
+    padding: 12px 14px 12px 16px;
     border-radius: 8px;
-    border: var(--cor-textos);
+    border: 1px solid #D0D5DD;
+    font-size: 16px;
 }
 
 .footer-cadastro-botão {
@@ -271,6 +268,8 @@ input {
     padding: 12px 20px;
     border: none;
     font-weight: 500;
+    height: 48px;
+    font-size: 16px;
 }
 
 .footer-direitos {
